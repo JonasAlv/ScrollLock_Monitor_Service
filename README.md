@@ -82,11 +82,7 @@ WantedBy=multi-user.target
 6. Enable and Start the Service:
 ```
 sudo systemctl daemon-reload
-```
-```
 sudo systemctl enable scrolllock-monitor.service
-```
-```
 sudo systemctl start scrolllock-monitor.service
 ```
 ## Manual Uninstallation
@@ -94,15 +90,11 @@ To uninstall the service manually:
 1. Stop and Disable the Service:
 ```
 sudo systemctl stop scrolllock-monitor.service
-```
-```
 sudo systemctl disable scrolllock-monitor.service
 ```
 2. Remove the Script and Service Files:
 ```
 sudo rm -f /usr/local/bin/scrolllock_monitor.sh
-```
-```
 sudo rm -f /etc/systemd/system/scrolllock-monitor.service
 ```
 3. Reload systemd:
