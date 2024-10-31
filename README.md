@@ -9,9 +9,11 @@ This is made mainly to turn on the RGB backlight of cheap keyboards that use the
 - Linux-based system with systemd(this is for Wayland, for x11 you can simply use `xset led on` and off)
 - Sudo privileges to create files and manage system services
 ## Installation
-1. Run install.sh with sudo privileges:
+1. Clone the repository and Run install.sh with sudo privileges:
 ```
-sudo ./install.sh
+git clone https://github.com/zero-stacks/ScrollLock_Monitor_Service.git
+cd ScrollLock_Monitor_Service
+sudo sh install.sh
 ```
 This script performs the following actions:
 - Creates a monitoring script (`/usr/local/bin/scrolllock_monitor.sh`) to keep the Scroll Lock LED brightness set to 1.
@@ -20,7 +22,7 @@ This script performs the following actions:
 ## Uninstallation
 1. Run uninstall.sh with sudo privileges:
 ```
-sudo ./uninstall.sh
+sudo sh uninstall.sh
 
 ```
 This script will:
