@@ -29,7 +29,7 @@ This script will:
 - Remove the script file (`/usr/local/bin/scrolllock_monitor.sh`).
 <br/><br/>
 ## Manual Installation (in case you don't trust the install script)
-To install the scrolllock-monitor service automatically:
+To install the scrolllock-monitor service:
 1. Create the Monitoring Script:
 ```
 sudo nano /usr/local/bin/scrolllock_monitor.sh
