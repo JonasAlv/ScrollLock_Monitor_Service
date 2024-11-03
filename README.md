@@ -6,7 +6,7 @@ This is made mainly to turn on the RGB backlight of cheap keyboards that use the
 - `install.sh`: Installs the scrolllock-monitor service.
 - `uninstall.sh`: Uninstalls the scrolllock-monitor service.
 ## Requirements
-- Linux-based system with systemd(this is for Wayland, for x11 you can simply use `xset led on` and off)
+- Linux-based system with systemd and running under wayland
 - Sudo privileges to create files and manage system services
 ## Installation
 1. Clone the repository and Run install.sh with sudo privileges:
@@ -102,4 +102,4 @@ sudo rm -f /etc/systemd/system/scrolllock-monitor.service
 sudo systemctl daemon-reload
 ```
 ## Notes
-- Adjusting the Script: The script monitors all /sys/class/leds/inputX::scrolllock/brightness files and sets them to 1 if they change to 0. Adjustments to monitoring frequency can be made by changing the sleep interval in the script.
+- Adjusting the Script: The script monitors all /sys/class/leds/inputX::scrolllock/brightness files and sets them to 1 if they change to 0. Adjustments to monitoring frequency can be made by changing the `sleep` interval in the script.
