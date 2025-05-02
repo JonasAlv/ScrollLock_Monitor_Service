@@ -37,7 +37,7 @@ To install the scrolllock-monitor service:
 ```
 sudo nano /usr/local/bin/scrolllock_monitor.sh
 ```
-2. copy and past this inside the script:
+2. copy/paste the script:
 ```
 #!/bin/bash
 
@@ -66,7 +66,7 @@ sudo chmod +x /usr/local/bin/scrolllock_monitor.sh
 ```
 sudo nano /etc/systemd/system/scrolllock-monitor.service
 ```
-5. Copy and paste this inside the service file:
+5. Copy/paste:
 ```
 [Unit]
 Description=Scroll Lock Monitor Service
