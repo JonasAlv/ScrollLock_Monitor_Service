@@ -1,8 +1,8 @@
 # Scroll Lock Monitor Service
 A systemd service that monitors the brightness of the Scroll Lock LED and ensures it remains turned on by setting the value inside the file `/sys/class/leds/inputX::scrolllock/brightness` to 1 whenever it changes back to 0. This is designed to work with any inputX::scrolllock device.
 <br/><br/>
-This is made mainly to turn on the RGB backlight of cheap keyboards that use the `ScrollLock` key to turn the RGB leds on(note: this is for Wayland, if you are using x11 you can just use `xset led on/off` to control leds).
-On many Linux distributions, the Scroll Lock is disabled by default, and since there is no `xset led` alternative for Wayland, I use this script. While you could manually edit the file, it resets to 0 whenever you press NumLock or Caps Lock.
+This is made mainly to turn on the RGB backlight of cheap keyboards that use  `ScrollLock` key to turn the RGB leds on(if you are using x11 you can just use `xset led on/off` to control leds).
+On many Linux distributions, the Scroll Lock is disabled by default, since there is no `xset led` alternative for Wayland, I use this script. While you could manually edit the file, it resets to 0 whenever you press NumLock or Caps Lock.
 
 ## Installation
 1. Clone the repository and Run install.sh with sudo privileges:
