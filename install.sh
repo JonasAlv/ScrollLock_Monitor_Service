@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "setting directories for script and service"
 SCRIPT_PATH="/usr/local/bin/scrolllock_monitor.sh"
 SERVICE_PATH="/etc/systemd/system/scrolllock-monitor.service"
 
@@ -15,11 +15,11 @@ monitor_brightness() {
                 echo 1 | sudo tee "$brightness_file" > /dev/null
             fi
         done
-        sleep 2  # You can adjust the sleep time to reduce CPU usage
+        sleep 2  #adjust sleep time for cpu usage
     done
 }
 
-# Start monitoring
+
 monitor_brightness
 EOF
 
